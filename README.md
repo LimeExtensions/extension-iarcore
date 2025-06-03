@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/github/repo-size/MAJigsaw77/extension-iarcore) ![](https://badgen.net/github/open-issues/MAJigsaw77/extension-iarcore) ![](https://badgen.net/badge/license/MIT/green)
 
-A Haxe/[Lime](https://lime.openfl.org) extension that implements In-App Reviews (IAR) functionality for Android devices.
+A Haxe/[Lime](https://lime.openfl.org) extension that implements In-App Reviews (IAR) functionality for Android and iOS devices.
 
 ### Installation
 
