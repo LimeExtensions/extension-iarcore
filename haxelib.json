@@ -10,8 +10,8 @@
 		"iar"
 	],
 	"description": "A Haxe/Lime extension that implements In-App Reviews (IAR) functionality for Android devices.",
-	"version": "1.0.0",
-	"releasenote": "Initial release.",
+	"version": "1.0.1",
+	"releasenote": "Fixes to the README.",
 	"contributors": [
 		"MAJigsaw77"
 	],
