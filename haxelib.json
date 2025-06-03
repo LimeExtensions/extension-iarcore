@@ -4,12 +4,14 @@
 	"license": "MIT",
 	"tags": [
 		"android",
+		"ios",
 		"java",
+		"objcpp",
 		"haxe",
 		"lime",
 		"iar"
 	],
-	"description": "A Haxe/Lime extension that implements In-App Reviews (IAR) functionality for Android devices.",
+	"description": "A Haxe/Lime extension that implements In-App Reviews (IAR) functionality for Android and iOS devices.",
 	"version": "1.0.1",
 	"releasenote": "Fixes to the README.",
 	"contributors": [

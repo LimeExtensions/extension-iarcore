@@ -1,6 +1,10 @@
 package;
 
-import extension.iarcore.IAR;
+#if android
+import extension.iarcore.android.IARAndroid;
+#elseif ios
+import extension.iarcore.ios.IARIOS;
+#end
 
 class Main extends lime.app.Application
 {
@@ -8,24 +12,30 @@ class Main extends lime.app.Application
 	{
 		super();
 
-		IAR.onLog.add(function(message:String):Void
+		#if android
+		IARAndroid.onLog.add(function(message:String):Void
 		{
 			trace('IAR Failed with "$message"');
 		});
-		IAR.onReviewCompleted.add(function(success:Bool):Void
+		IARAndroid.onReviewCompleted.add(function(success:Bool):Void
 		{
 			trace('IAR Review Completed with "${success ? 'Success' : 'Failure'}"');
 		});
-		IAR.onReviewError.add(function(message:String):Void
+		IARAndroid.onReviewError.add(function(message:String):Void
 		{
 			trace('IAR Review Failed with "$message"');
 		});
+		#end
 	}
 
 	public override function onWindowCreate():Void
 	{
-		IAR.init();
-		IAR.requestAndLaunchReviewFlow();
+		#if android
+		IARAndroid.init();
+		IARAndroid.requestAndLaunchReviewFlow();
+		#elseif ios
+		IARIOS.requestReview();
+		#end
 	}
 
 	public override function render(context:lime.graphics.RenderContext):Void
