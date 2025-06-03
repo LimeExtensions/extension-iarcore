@@ -17,15 +17,15 @@ import org.haxe.lime.HaxeObject;
 /**
  * The IARCore class provides functionality for integrating in-app reviews using the Google Play In-App Reviews API.
  * 
- * It provides methods to initialize review managers and request in-app review flows (real or fake.
+ * It provides methods to initialize review managers and request in-app review flows (real or fake).
  * 
  * @see https://developer.android.com/guide/playcore/in-app-review/kotlin-java
  */
 public class IARCore extends Extension
 {
 	private static HaxeObject haxeObject = null;
-    private static ReviewManager reviewManager = null;
-    private static FakeReviewManager fakeManager = null;
+	private static ReviewManager reviewManager = null;
+	private static FakeReviewManager fakeManager = null;
 
 	public static void init(HaxeObject object)
 	{
