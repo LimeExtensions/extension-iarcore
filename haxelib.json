@@ -12,8 +12,8 @@
 		"iar"
 	],
 	"description": "A Haxe/Lime extension that implements In-App Reviews (IAR) functionality for Android and iOS devices.",
-	"version": "1.0.2",
-	"releasenote": "Implement iOS and adjust some things on Android.",
+	"version": "1.0.3",
+	"releasenote": "Lock Google Play In-App Review library version.",
 	"contributors": [
 		"MAJigsaw77"
 	],
